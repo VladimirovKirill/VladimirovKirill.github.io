@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+  <head>
+   <title>Ссылки и форма</title>
+  </head>
+
+  <body>
+
+    <h1 id="a1">Форма</h1>
+
+    <form action="/"
+      method="POST">
+
+      <label>
+        Имя:<br />
+        <input name="field-name-1"
+          placeholder="Введите имя... " />
+      </label><br />
+
+      <label>
+        Email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту..." />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2022-09-09"
+          type="date" />
+      </label><br />
+
+      Пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+      <label><input type="radio"
+        name="radio-group-1" value="Значение3" />
+        Другой</label><br />
+
+      Количество конечностей:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-2" value="Значение1" />
+        Четыре</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        Менее четырех</label><br />
+      <label><input type="radio"
+        name="radio-group-2" value="Значение3" />
+        Более четырех</label><br />
+
+      <label>
+        Сверхспособности:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2">Прохождение сквозь стены</option>
+          <option value="Значение3">Левитация</option>
+        </select>
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2">Ваша история...</textarea>
+      </label><br />
+
+
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        C контрактом ознакомлен</label><br />
+
+      <br /><input type="submit" value="Отправить" />
+    </form>
+
+    <h1 id="a2">Ссылки:</h1>
+
+    <ol> 
+     <li><a href="http://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a></li> 
+     <li><a href="https://example.com/">Абсолютная на главную сайта example.com в протоколе https</a></li>
+     <li><a href="ftp://example.com/Temp/top%20secret.txt">Ссылку на файл на сервере FTP без авторизации</a></li>
+     <li><a href="ftp://log:qwerty@example.com/Temp/top%20secret.txt">Ссылку на файл на сервере FTP с авторизацией</a></li>
+     <li><a href="https://aternos.org/:ru/#:~:text=Ваш%20личный%20Minecraft%20сервер">Cсылка на фрагмент страницы некоторого сайта</a></li>
+     <li><a href="#a1">Ссылка на фрагмент текущей страницы</a></li>
+     <li><a href="https://market.yandex.ru/search?cvredirect=2&text=umbrella&local-offers-first=0&page=2">Ссылка с двумя параметрами в URL</a></li>
+<!-- немного перебор с количеством параметров, но думаю сойдет =) -->
+     <li>
+         <ol>
+          <li><a href="#a1" title="Тут хранится золото">Ссылка основной навигации сайта с подписью title №1</a></li>
+          <li><a href="#a2" title="А вот сюда вход только платно">Ссылка основной навигации сайта с подписью title №2</a></li>
+         </ol></li>
+     <li><a title="Можно и без этого тайтла, но почему бы и да">https://photomath.com/</a></li>
+     <li><a href="">Ссылка с пустым href</a></li>
+     <li><a href="http://example.com/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+     <li><!--noindex--><a href="http://example.com/">Ссылка запрещенная для индексации поисковиками</a><!--/noindex--></li>
+     <li>«Те, кто узнал мое <a href="https://vedmak.fandom.com/wiki/Гюнтер_о%27Дим">имя</a>, либо уже мертвы, либо судьба их была гораздо-гораздо хуже»</li>
+     <li><a href="http://example.com/"><img src="https://www.upload.ee/image/14516612/champ.png" alt="1"></a></li>
+     <li><map name="rect1"><area shape="rect" coords="14,14,40,40" href="http://example.com/" alt="Подсказка"></map><img src="https://www.upload.ee/image/14498112/46x73.jpg" alt="1" usemap="#rect1">Нажми на мое левое ухо</li>
+     <li><map name="circle1"><area shape="circle" coords="17,66,5" href="http://example.com/" alt="Подсказка"></map><img src="https://www.upload.ee/image/14498112/46x73.jpg" alt="1" usemap="#circle1">Нажми на мою правую лапу</li>
+     <li><a href="index.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+     <li><a href="./about/index.html">Относительная ссылка на страницу в каталоге about</a></li>
+     <li><a href="./">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+     <li><a href="../">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+     <li><a href="/">Сокращенная ссылка на главную</a></li>
+     <li><a href="/qwerty">Сокращенная ссылка на внутреннюю</a></li>
+    </ol> 
+  </body>
+
+</html> 
