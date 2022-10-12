@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <script defer src="5.js"></script> 
+    <title>Калькулятор стоимости товара</title>
+</head>
+
+<body>
+    <div class="body">
+            <form class="container row">
+                <div class="form-group">
+                <input name = "Price" type = "text" class = "form-control" id="Price" placeholder = "Цена товара">         
+                <input name = "Count" type = "text" class = "form-control" id="Count" placeholder = "Количество товара">         
+                <button id = "Calculate" type = "button" class = "btn btn-light container" onclick = "return CalculatedPrice();">Рассчитать</button> 
+                </div>
+            </form>   
+            Итог цены: 
+        <div class="result" id="result"></div>
+     </div> 
+
+</body>
+
+</html> 
