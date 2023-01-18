@@ -1,0 +1,84 @@
+body{
+  background-image: url(pict.png);
+    margin: auto;
+    background-color: lightgray;
+}
+
+a {
+    color: white;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+main, header, footer, nav {
+    background-color: gray;
+    max-width: 700px;
+}
+
+header {
+    height: 300px;
+}
+
+
+
+main div{
+    background-color: gray;
+}
+
+table {
+    background-color: black;
+}
+
+th {
+    background-color: white;
+}
+
+td {
+    background-color: red;
+}
+
+td:nth-child(even){
+    background-color: blue;
+}
+
+.picture {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #logo {
+        width: 190px;
+        height: 200px;
+    }
+
+    main, nav {
+        max-width: 960px;
+    }
+    
+    header, footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    #inheader {
+        width: 960px;   
+    }
+
+    .picture {
+        width: 412px;
+        height: 260px;
+    }
+}

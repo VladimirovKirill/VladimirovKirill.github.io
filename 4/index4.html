@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <title>Сайт с заданиями</title>
+        <link 
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+        </script>
+        <link 
+            rel="stylesheet" 
+            href="style4.css">
+    </head>
+    <body>
+        <header class="my-3">
+            <div id="inheader" class="row mx-auto">
+                <img 
+                    src="dog.jpg"
+                    height="200" 
+                    width="150"
+                    alt="лого"
+                    id="logo">
+                <h1 class="my-auto mx-5">Настоящее название сайта</h1>
+            </div>
+        </header>
+        <nav class="row mx-auto py-2">
+            <div class="col-md-2"></div>
+
+            <a href="#hyperlinks-part" class="col-md-1 py-2">
+                Список
+            </a>
+
+            <div class="col-md-2"></div>
+            
+            <a href="#table-part" class="col-md-1 py-2">
+                Таблица
+            </a> 
+
+            <div class="col-md-2"></div>
+            
+            <a href="#form-part" class="col-md-1 py-2">
+                Форма
+            </a>
+
+            <div class="col-md-2"></div>
+        </nav>
+        <main class="mx-auto my-3">
+            <div id="hyperlinks-part" class="my-2 py-2 px-2">
+                <h2>Нумерованный список</h2>
+                <ol id="linklist">
+                    <li><a href="http://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a></li> 
+                    <li><a href="https://example.com/">Абсолютная на главную сайта example.com в протоколе https</a></li>
+                    <li><a href="ftp://example.com/Temp/top%20secret.txt">Ссылку на файл на сервере FTP без авторизации</a></li>
+                    <li><a href="ftp://log:qwerty@example.com/Temp/top%20secret.txt">Ссылку на файл на сервере FTP с авторизацией</a></li>
+                    <li><a href="https://aternos.org/:ru/#:~:text=Ваш%20личный%20Minecraft%20сервер">Cсылка на фрагмент страницы некоторого сайта</a></li>
+                    <li><a href="#a1">Ссылка на фрагмент текущей страницы</a></li>
+                    <li><a href="https://market.yandex.ru/search?cvredirect=2&text=umbrella&local-offers-first=0&page=2">Ссылка с двумя параметрами в URL</a></li>
+<!-- немного перебор с количеством параметров, но думаю сойдет =) -->
+                    <li>
+                        <ol>
+                    <li><a href="#a1" title="Тут хранится золото">Ссылка основной навигации сайта с подписью title №1</a></li>
+                    <li><a href="#a2" title="А вот сюда вход только платно">Ссылка основной навигации сайта с подписью title №2</a></li>
+                        </ol></li>
+                    <li><a title="Можно и без этого тайтла, но почему бы и да">https://photomath.com/</a></li>
+                    <li><a href="">Ссылка с пустым href</a></li>
+                    <li><a href="http://example.com/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+                    <li><!--noindex--><a href="http://example.com/">Ссылка запрещенная для индексации поисковиками</a><!--/noindex--></li>
+                    <li>«Те, кто узнал мое <a href="https://vedmak.fandom.com/wiki/Гюнтер_о%27Дим">имя</a>, либо уже мертвы, либо судьба их была гораздо-гораздо хуже»</li>
+                    <li><a href="http://example.com/"><img src="champ.jpg" alt="победитель"></a></li>
+                    <li><map name="rect1"><area shape="rect" coords="14,14,40,40" href="http://example.com/" alt="Подсказка"></map><img src="dog.jpg" usemap="#rect1" alt="собака1">Нажми на мое левое ухо</li>
+                    <li><map name="circle1"><area shape="circle" coords="17,140,15" href="http://example.com/" alt="Подсказка"></map><img src="dog.jpg" usemap="#circle1" alt="собака2">Нажми на мою правую лапу</li>
+                    <li><a href="index.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+                    <li><a href="./about/index.html">Относительная ссылка на страницу в каталоге about</a></li>
+                    <li><a href="./">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                    <li><a href="../">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+                    <li><a href="/">Сокращенная ссылка на главную</a></li>
+                    <li><a href="/qwerty">Сокращенная ссылка на внутреннюю</a></li>
+                </ol>
+            </div>
+            <div id="table-part" class="my-2 py-2 px-2">
+                <h2>Таблица</h2>
+                <table>
+                    <tr>
+                        <th>К1</th>
+                        <th>К2</th>
+                        <th>К3</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Я11 с Я12</td>
+                        <td>Я13</td>
+                    </tr>
+                    <tr>
+                        <td>Я21</td>
+                        <td colspan="2">Я22 с Я23</td>
+                    </tr>
+                    <tr>
+                        <td>Я31</td>
+                        <td>Я32</td>
+                        <td>Я33</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Я41 с Я42</td>
+                        <td>Я43</td>
+                    </tr>
+                    <tr>
+                        <td>Я51</td>
+                        <td>Я52</td>
+                        <td>Я53</td>
+                    </tr>
+                  </table>
+            </div>
+            <div id="form-part" class="my-2 py-2 px-2">
+                <h2>Форма</h2>
+                <form id="myform"
+                    action="/"
+                    method="POST">
+                    <label>
+                      Имя:<br />
+                      <input name="field-name-1"
+                        placeholder="Введите имя... " />
+                    </label><br />
+
+                    <label>
+                      Email:<br />
+                      <input name="field-email"
+                        type="email"
+                        placeholder="Введите вашу почту..." />
+                    </label><br />
+
+                    <label>
+                      Дата рождения:<br />
+                      <input name="field-date"
+                        value="2022-09-09"
+                        type="date" />
+                    </label><br />
+
+                    Пол:<br />
+                    <label><input type="radio" checked="checked"
+                      name="radio-group-1" value="Значение1" />
+                      Мужской</label>
+                    <label><input type="radio"
+                      name="radio-group-1" value="Значение2" />
+                      Женский</label><br />
+                    <label><input type="radio"
+                      name="radio-group-1" value="Значение3" />
+                      Другой</label><br />
+
+                    Количество конечностей:<br />
+                    <label><input type="radio" checked="checked"
+                      name="radio-group-2" value="Значение1" />
+                      Четыре</label>
+                    <label><input type="radio"
+                      name="radio-group-2" value="Значение2" />
+                      Менее четырех</label><br />
+                    <label><input type="radio"
+                      name="radio-group-2" value="Значение3" />
+                      Более четырех</label><br />
+
+                    <label>
+                      Сверхспособности:
+                      <br />
+                      <select name="field-name-4[]"
+                        multiple="multiple">
+                        <option value="Значение1">Бессмертие</option>
+                        <option value="Значение2">Прохождение сквозь стены</option>
+                        <option value="Значение3">Левитация</option>
+                      </select>
+                    </label><br />
+
+                    <label>
+                      Биография:<br />
+                      <textarea name="field-name-2">Ваша история...</textarea>
+                    </label><br />
+
+
+                    <label><input type="checkbox" checked="checked"
+                      name="check-1" />
+                      C контрактом ознакомлен</label><br />
+
+                    <br /><input type="submit" value="Отправить" />
+                </form>
+            </div>
+        </main>
+        <footer class="py-5">
+                (C) Владимиров Кирилл    
+        </footer>
+        
+    </body>
+</html>
