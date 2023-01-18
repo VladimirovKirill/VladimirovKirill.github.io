@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    for (let i = 1; i <= 17; i++){
+    for (let i = 1; i <= 16; i++){
         $('<img src="pictures/' + i.toString() + '.jpg">').appendTo('.gallery')
     }
 
